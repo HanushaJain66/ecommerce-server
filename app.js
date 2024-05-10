@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'process.env.CLIENT_URL', // Allow requests from this origin
+  origin: process.env.CLIENT_URL, // Allow requests from this origin
   credentials: true // Allow cookies and other credentials to be sent
 }));
 dotenv.config({
